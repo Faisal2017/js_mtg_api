@@ -43,15 +43,6 @@ var createImage = function(card) {
   return li.appendChild(image);
 }
 
-  // var ul = document.querySelector('#card-list');
-
-  // cardList.cards.forEach(function(card) {
-  //   var li = document.createElement('li');
-  //   li.innerText = "Name: " + card.name + ", Desciption:" + card.flavor;
-  //   ul.appendChild(li);
-  // });
-// }
-
 
 var app = function() {
   var url = "https://api.magicthegathering.io/v1/cards";
