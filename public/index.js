@@ -27,6 +27,41 @@ var displayCards = function(cardList) {
     ul.appendChild(imageLi);
     ul.appendChild(typeLi);
   })
+
+  findTypes(cardList);
+}
+
+var findTypes = function(cardList) {
+  var creatureCard = 0;
+  var instantCard = 0;
+  var enchantmentCard = 0;
+  var artifactCard = 0;
+  var sorceryCard = 0;
+
+  for (card of cardList.cards) {
+    if (card.types[0] === 'Creature') {
+      creatureCard ++;
+    }
+    if (card.types[0] === 'Instant') {
+      instantCard ++;
+    }
+    if (card.types[0] === 'Enchantment') {
+      enchantmentCard ++;
+    }
+    if (card.types[0] === 'Artifact') {
+      artifactCard ++;
+    }
+    if (card.types[0] === 'Sorcery') {
+      sorceryCard ++;
+    }  
+  }
+
+  console.log(cardList.cards)
+  console.log(creatureCard);
+  console.log(instantCard);
+  console.log(enchantmentCard);
+  console.log(artifactCard);
+  console.log(sorceryCard);
 }
 
 var createName = function(card) {
@@ -56,3 +91,7 @@ var app = function() {
 }
 
 window.addEventListener('load', app);
+
+window.addEventListener('load', function() {
+  new PieChart();
+});
