@@ -15,7 +15,7 @@ var PieChart = function() {
       data: [{
         name: "Creature",
         y: 21,
-        color: "#ffac33"
+        color: "yellow"
       }, {
         name: "Instant",
         y: 15,

@@ -1,0 +1,10 @@
+ul#card-list {
+  min-width: 700px;
+  list-style: none;
+  padding-top: 30px;
+  padding-right: 10px;
+  }
+  
+  ul#card-list li {
+    display: inline;
+  }

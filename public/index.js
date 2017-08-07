@@ -23,9 +23,9 @@ var displayCards = function(cardList) {
     var typeLi = createType(card);
 
     var ul = document.querySelector('#card-list');
-    ul.appendChild(nameLi);
+    // ul.appendChild(nameLi);
     ul.appendChild(imageLi);
-    ul.appendChild(typeLi);
+    // ul.appendChild(typeLi);
   })
 
   findTypes(cardList);
